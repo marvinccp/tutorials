@@ -8,7 +8,7 @@
 <body>
 	<h3>Welcome, Enter The Employee Details</h3>
 
-	<form:form method="POST" action="/spring-mvc-basics/addEmployee" modelAttribute="employee">
+	<form:form method="POST" action="/spring-mvc-basics-prueba/addEmployee" modelAttribute="employee">
 		<table>
 			<tr>
 				<td><form:label path="name">Name</form:label></td>
@@ -21,6 +21,10 @@
 			<tr>
 				<td><form:label path="contactNumber">Contact Number</form:label></td>
 				<td><form:input path="contactNumber" /></td>
+			</tr>
+			<tr>
+				<td><form:label path="workingArea">Working area</form:label></td>
+				<td><form:input path="workingArea" /></td>
 			</tr>
 			<tr>
 				<td><input type="submit" value="Submit" /></td>

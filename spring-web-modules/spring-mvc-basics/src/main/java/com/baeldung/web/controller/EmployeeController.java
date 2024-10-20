@@ -26,6 +26,8 @@ public class EmployeeController {
         employeeMap.put(1L, new Employee(1L, "John", "223334411", "rh"));
         employeeMap.put(2L, new Employee(2L, "Peter", "22001543", "informatics"));
         employeeMap.put(3L, new Employee(3L, "Mike", "223334411", "admin"));
+        System.out.println("Empleados inicializados: " + employeeMap.size());
+
     }
 
     @RequestMapping(value = "/employee", method = RequestMethod.GET)
@@ -49,9 +51,21 @@ public class EmployeeController {
         model.addAttribute("id", employee.getId());
 
         employeeMap.put(employee.getId(), employee);
+        model.addAttribute("employees", employeeMap.values());
+       // return "employeeView";
+         return "redirect:/employees";
 
-        return "employeeView";
     }
+
+
+    @RequestMapping(value = "/employees", method = RequestMethod.GET)
+    public ModelAndView listEmployees(){
+        ModelAndView modelAndView = new ModelAndView("employeeList");
+        modelAndView.addObject("employees", employeeMap.values());
+
+        return modelAndView;
+    }
+
 
     @ModelAttribute
     public void addAttributes(final Model model) {
