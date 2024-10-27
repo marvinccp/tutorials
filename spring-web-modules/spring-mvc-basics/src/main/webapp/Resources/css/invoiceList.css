@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    cursor:pointer
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+        cursor:pointer
+
+}
+
+button:hover {
+    background-color: #45a049;
+        cursor:pointer
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 20px;
+        cursor:pointer
+
+}
+
+table, th, td {
+    border: 2px solid #ddd;
+        cursor:pointer
+
+}
+
+th {
+    background-color: #C0C0C0;
+    color: white;
+    padding: 12px;
+        cursor:pointer
+
+}
+
+td {
+    padding: 12px;
+    background-color: #f1efef
+;
+    color: #333;
+        cursor:pointer
+
+}
+
+
+tr:hover td {
+    background-color: #ffffff
+ ;
+     cursor:pointer
+
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+        cursor:pointer
+
+}
+
+a:hover {
+    color: #000;
+}
+
+button {
+    margin-bottom: 20px;
+        cursor:pointer
+
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+        cursor:pointer
+
+}

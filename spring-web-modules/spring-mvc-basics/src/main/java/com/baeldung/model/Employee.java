@@ -1,5 +1,4 @@
 package com.baeldung.model;
-
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
